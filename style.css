@@ -1,0 +1,173 @@
+/* General Styling */
+body {
+    background: linear-gradient(115deg, rgb(209, 107, 165), rgb(134, 168, 231), rgb(95, 251, 241));
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem; /* Use rem for scalable font size */
+    font-weight: 1000;
+    text-decoration-line: underline;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Question */
+.question {
+    margin-left: 10px;
+    padding-top: 12px;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Quiz Section */
+.quiz-sec {
+    background-color: white;
+    margin: 50px auto;
+    height: auto; /* Let height adjust based on content */
+    width: 80%;
+    max-width: 600px; /* Restrict width to max 600px */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Option List */
+.web {
+    list-style: upper-alpha;
+    padding: 1px;
+    padding-left: 32px;
+    padding-bottom: 13px;
+}
+
+li {
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid black;
+    width: 88%;
+    border-radius: 20px;
+    border-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* Button */
+button {
+    border: none;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background-color: rgb(0, 128, 111);
+    font-size: 1rem;
+    width: 100px;
+    height: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(140, 255, 0);
+}
+
+/* Result Section */
+.result {
+    width: 89%;
+    max-width: 600px; /* Restrict width */
+    height: auto;
+    padding: 2rem;
+    background-color: yellow;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.result h2 {
+    font-size: 2rem;
+}
+
+.score {
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.result p {
+    font-size: 1.6rem;
+}
+
+.reload-button {
+    margin-left: auto;
+  
+    text-align: center;
+}
+.reload-button:hover{
+    background-color: orangered;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .quiz-sec {
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    button {
+        font-size: 0.9rem;
+        width: 80px;
+    }
+
+    .result {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-sec {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .question {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        width: 70px;
+    }
+
+    .result h2 {
+        font-size: 1.5rem;
+    }
+
+    .result p {
+        font-size: 1.4rem;
+    }
+}
